@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-import-location",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Enforces the location of imports. For example, that assets are co-located with components",
   "keywords": [
     "eslint",
