@@ -43,7 +43,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-### no-absolute-asset-path [[docs](docs/rules/no-absolute-asset-path .md)]
+### no-absolute-asset-path [[docs](docs/rules/no-absolute-asset-path.md)]
 
 Enforces that assets are co-located with javascript files/components.
 
