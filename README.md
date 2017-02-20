@@ -36,14 +36,14 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "import-location/only-relative-assets": 1
+        "import-location/no-absolute-asset-path": 1
     }
 }
 ```
 
 ## Supported Rules
 
-### only-relative-assets [docs](docs/rules/only-relative-assets.md)
+### no-absolute-asset-path [[docs](docs/rules/no-absolute-asset-path .md)]
 
 Enforces that assets are co-located with javascript files/components.
 

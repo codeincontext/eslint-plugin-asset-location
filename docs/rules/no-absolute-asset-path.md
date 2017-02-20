@@ -1,4 +1,4 @@
-# Only allow assets co-located with the importing file (only-relative-assets)
+# Only allow assets co-located with the importing file (no-absolute-asset-path)
 
 Some projects have best practices about co-location of assets.
 

@@ -8,7 +8,7 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-var rule = require('../../../lib/rules/only-relative-assets')
+var rule = require('../../../lib/rules/no-absolute-asset-path')
 var RuleTester = require('eslint').RuleTester
 
 var parserOptions = {
@@ -25,7 +25,7 @@ var ruleTester = new RuleTester({
   parserOptions: parserOptions
 })
 
-ruleTester.run('only-relative-assets', rule, {
+ruleTester.run('no-aabsolute-asset-path', rule, {
   valid: [
     {
       code: 'import loading from "./loading.png";',
