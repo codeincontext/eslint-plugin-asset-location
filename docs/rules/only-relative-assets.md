@@ -1,36 +1,34 @@
 # Only allow assets co-located with the importing file (only-relative-assets)
 
-Please describe the origin of the rule here.
-
+Some projects have best practices about co-location of assets.
 
 ## Rule Details
 
-This rule aims to...
+This rule enforces that assets (like images) are located alongside the javascript component or file that uses them, rather than in a central "images" folder.
 
 Examples of **incorrect** code for this rule:
 
 ```js
-
-// fill me in
-
+import loading from "static/images/loading.png";
+const loading = require("static/images/loading.png");
 ```
 
 Examples of **correct** code for this rule:
 
 ```js
-
-// fill me in
-
+import loading from "./loading.png";
+import loading from "../loading.png";
+const loading = require("./loading.png");
 ```
 
 ### Options
 
-If there are any options, describe them here. Otherwise, delete this section.
+None so far. The extensions used to find assets are `['jpg', 'jpeg', 'png', 'gif', 'css', 'woff', 'svg', 'ico']`.
 
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
+Don't use this rule if you want your assets in a central directory.
 
 ## Further Reading
 
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+None.

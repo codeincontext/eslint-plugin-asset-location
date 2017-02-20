@@ -36,16 +36,24 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "import-location/rule-name": 2
+        "import-location/only-relative-assets": 1
     }
 }
 ```
 
 ## Supported Rules
 
-* Fill in provided rules here
+### only-relative-assets [docs](docs/rules/only-relative-assets.md)
 
+Enforces that assets are co-located with javascript files/components.
 
+```js
+// Allowed
+import loading from "./loading.png";
+import loading from "../loading.png";
+const loading = require("./loading.png");
 
-
-
+// Not allowed
+import loading from "static/images/loading.png";
+const loading = require("static/images/loading.png");
+```
